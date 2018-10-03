@@ -2,21 +2,29 @@
 	based on a given key */
 
 
-const convert = (inputArr, key) => {
+const convert = (inputArr, keyField) => {
+
+	// var res = {};
+
+	// if(Array.isArray(inputArr)) {
+	// 	inputArr.forEach(element => {
+	// 		res[element[key]] = element;
+	// 	});
+	// } else {
+	// 	res = null;
+	// }
+
+	// return res;
+
 	
-	var res = {};
-
-	if(inputArr instanceof Array) {
-		inputArr.forEach(element => {
-			//console.log(element);
-			//console.log("key is : " + element[key]);
-			res[element[key]] = element;
-		});
+	if (Array.isArray(inputArr)) {
+		return inputArr.reduce((acc, item) => {
+			acc[item[keyField]] = item;
+			return acc;
+		}, {});
 	} else {
-		res = null;
+		return null;
 	}
-
-	return res;
 };
 
 /* For example,

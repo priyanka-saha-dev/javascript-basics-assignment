@@ -12,8 +12,8 @@
 // //q2(testObj, key);
 // console.log(q2(testObj, key));
 
-console.log('***************Question 3***************');
-var q3 = require('./solutions/q3_flatten_n_dimensional_array');
- var testObj = [1, [2, 3], [[4, 5], [6, 7]], [[[8, 9], 10]]];
+// console.log('***************Question 3***************');
+// var q3 = require('./solutions/q3_flatten_n_dimensional_array');
+//  var testObj = [1, [2, 3], [[4, 5], [6, 7]], [[[8, 9], 10]]];
  
-console.log(q3(testObj));
+// console.log(q3(testObj));
