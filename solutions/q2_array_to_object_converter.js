@@ -2,8 +2,21 @@
 	based on a given key */
 
 
-const convert = () => {
-	// Write your code here
+const convert = (inputArr, key) => {
+	
+	var res = {};
+
+	if(inputArr instanceof Array) {
+		inputArr.forEach(element => {
+			//console.log(element);
+			//console.log("key is : " + element[key]);
+			res[element[key]] = element;
+		});
+	} else {
+		res = null;
+	}
+
+	return res;
 };
 
 /* For example,
