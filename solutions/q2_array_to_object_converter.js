@@ -4,19 +4,6 @@
 
 const convert = (inputArr, keyField) => {
 
-	// var res = {};
-
-	// if(Array.isArray(inputArr)) {
-	// 	inputArr.forEach(element => {
-	// 		res[element[key]] = element;
-	// 	});
-	// } else {
-	// 	res = null;
-	// }
-
-	// return res;
-
-	
 	if (Array.isArray(inputArr)) {
 		return inputArr.reduce((acc, item) => {
 			acc[item[keyField]] = item;

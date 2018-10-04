@@ -18,7 +18,7 @@
  
 // console.log(q3(testObj));
 
-console.log('***************Question 4***************');
-var q4 = require('./solutions/q4_data_modelling_and_retrieval');
+// console.log('***************Question 4***************');
+// var q4 = require('./solutions/q4_data_modelling_and_retrieval');
 
-console.log(q4('beRRy'));
+// console.log(q4('beRRy'));

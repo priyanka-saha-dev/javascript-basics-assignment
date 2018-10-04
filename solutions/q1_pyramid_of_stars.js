@@ -2,16 +2,14 @@
 
 const buildPyramid = (rows) => {
     
-    var text = '';
-    for(var i=0 ; i<rows ; i++) {
-        //console.log('i = ' + i);
-        for (var k=1; k<=(rows-(i+1)); k++) {
-            //console.log('       k = ' + k);
+    let text = '';
+    for(let i=0 ; i<rows ; i++) {
+       
+        for (let k=1; k<=(rows-(i+1)); k++) {
             text += ' ';
         }
 
-        for (var j=0;j<=i;j++) {
-            //console.log('       j = ' + j);
+        for (let j=0;j<=i;j++) {
             text += ' *';
         }
 

@@ -5,7 +5,7 @@
 
 // Write your code here
 
-var listOfFruits = [
+const listOfFruits = [
     {name : "Apple", color : "red", pricePerKg : 23.5}, 
     {name : "Mango", color : "green", pricePerKg : 45.2}, 
     {name : "Banana", color : "yellow", pricePerKg : 98.2}, 
@@ -14,7 +14,7 @@ var listOfFruits = [
 ]
 
 const convertList = () => {
-    var keyField = 'name';
+    let keyField = 'name';
     return listOfFruits.reduce((acc, item) => {
         acc[item[keyField].toLowerCase()] = item;
         return acc;
@@ -22,7 +22,9 @@ const convertList = () => {
 }
 
 const fetchFruitProperties = (fruitName) => {
-    return (fruitName !== undefined || fruitName != null) ? convertList()[fruitName.toLowerCase()] : null;
+    //return (fruitName !== undefined || fruitName != null) ? convertList()[fruitName.toLowerCase()] : null;
+
+    return listOfFruits.filter( element => element.name.toLowerCase() === fruitName.toLowerCase());
 }
 
 module.exports = fetchFruitProperties;
