@@ -18,7 +18,15 @@
  
 // console.log(q3(testObj));
 
-// console.log('***************Question 4***************');
-// var q4 = require('./solutions/q4_data_modelling_and_retrieval');
+console.log('***************Question 4***************');
+var q4 = require('./solutions/q4_data_modelling_and_retrieval');
 
-// console.log(q4('beRRy'));
+//console.log("getFruitProperties : ");
+//console.log(q4.getFruitProperties('beRRy'));
+
+// console.log("addFruitProperties : ");
+// console.log(q4.addFruitProperties('ssdf', 'sdfsdf', 12.65));
+
+console.log("updateFruitProperties : ");
+q4.updateFruitProperties('Banana', 'sdfsdf', 12.65);
+//console.log(q4.updateFruitProperties('Banana', 'sdfsdf', 12.65));
