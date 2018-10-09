@@ -1,19 +1,15 @@
 /* Write a Program to convert an array of objects to an object
 	based on a given key */
-
-
 const convert = (inputArr, keyField) => {
-
+	let finalOutput = null;
 	if (Array.isArray(inputArr)) {
-		return inputArr.reduce((acc, item) => {
+		finalOutput = inputArr.reduce((acc, item) => {
 			acc[item[keyField]] = item;
 			return acc;
 		}, {});
-	} else {
-		return null;
 	}
+	return finalOutput;
 };
-
 /* For example,
 INPUT - convert([{id: 1, value: 'abc'}, {id: 2, value: 'xyz'}], 'id')
 OUTPUT - {
