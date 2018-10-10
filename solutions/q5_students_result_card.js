@@ -12,8 +12,11 @@ function getSum(total, num) {
   return total + num;
 }
 function calculateResult() {
-  let e2 = document.getElementsByClassName('studentCard');
+  let e2;
   let count = 0;
+  if(document) {
+    e2 = document.getElementsByClassName('studentCard');
+  }
   if (e2) {
     count = e2.length;
   }
@@ -41,3 +44,7 @@ function calculateResult() {
     studentEle.querySelector('#percentge').innerHTML = percentage;
   }
 }
+const calculate = () => {
+  calculateResult();
+}
+module.exports = calculate;
