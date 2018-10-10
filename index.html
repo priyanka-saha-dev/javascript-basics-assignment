@@ -1,4 +1,19 @@
-<div id="reportCard">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="solutions/q5_students_result_card.js"></script>
+
+</head>
+
+<body>
+
+    <div id="reportCard">
         <table border="1">
             <thead>
                 <tr>
@@ -6,43 +21,52 @@
                     <th>Name</th>
                     <th>Subject-1</th>
                     <th>Subject-2</th>
+                    <th>Subject-2</th>
                     <th>Total</th>
                     <th>Percentage</th>
                 </tr>
             </thead>
             <tbody>
-                <tr id="student1">
+                <tr id="student1" class="studentCard">
                     <td>1</td>
                     <td>abc</td>
                     <td id="sub1-marks">78</td>
-                    <td id="sub2-marks">98</td>
+                    <td id="sub2-marks">45</td>
+                    <td id="sub3-marks"></td>
                     <td id="total"></td>
                     <td id="percentge"></td>
                 </tr>
-                <tr id="student2">
+                <tr id="student2" class="studentCard">
                     <td>2</td>
                     <td>dfsdf</td>
                     <td id="sub1-marks">94</td>
-                    <td id="sub2-marks">87</td>
+                    <td id="sub2-marks"></td>
+                    <td id="sub3-marks">78</td>
                     <td id="total"></td>
                     <td id="percentge"></td>
                 </tr>
-                <tr id="student3">
+                <tr id="student3" class="studentCard">
                     <td>3</td>
                     <td>dfgfrfh</td>
                     <td id="sub1-marks">79</td>
                     <td id="sub2-marks">45</td>
+                    <td id="sub3-marks"></td>
                     <td id="total"></td>
                     <td id="percentge"></td>
                 </tr>
-                <tr id="student4">
+                <tr id="student4" class="studentCard">
                     <td>4</td>
                     <td>dgfdfgh</td>
-                    <td id="sub1-marks">87</td>
+                    <td id="sub1-marks"></td>
                     <td id="sub2-marks">32</td>
+                    <td id="sub3-marks">79</td>
                     <td id="total"></td>
                     <td id="percentge"></td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <div><button id="calculate" onclick="calculateResult()">Calculate</button></div>
+</body>
+
+</html>

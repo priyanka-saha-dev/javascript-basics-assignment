@@ -8,3 +8,36 @@
 
 
 // Write your code here
+function calculateResult() {
+  let e2 = document.getElementsByClassName('studentCard');
+  let count = 0;
+  if (e2) {
+    count = e2.length;
+  }
+  for (let i = 0; i < count; i += 1) {
+    let studentEle = e2[i];
+    let marks = [];
+    if (studentEle) {
+      let sub1Marks = parseFloat(studentEle.querySelector('#sub1-marks').innerHTML);
+      let sub2Marks = parseFloat(studentEle.querySelector('#sub2-marks').innerHTML);
+      let sub3Marks = parseFloat(studentEle.querySelector('#sub3-marks').innerHTML);
+      
+      if(!isNaN(sub1Marks)) {
+        marks.push(sub1Marks);
+      }
+      if(!isNaN(sub2Marks)) {
+        marks.push(sub2Marks);
+      }
+      if(!isNaN(sub3Marks)) {
+        marks.push(sub3Marks);
+      }
+    }
+    let total = marks.reduce(getSum);
+    let percentage = total/marks.length;
+    studentEle.querySelector('#total').innerHTML = total;
+    studentEle.querySelector('#percentge').innerHTML = percentage;
+  }
+}
+function getSum(total, num) {
+  return total + num;
+}
