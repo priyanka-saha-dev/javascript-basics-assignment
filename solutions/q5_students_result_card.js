@@ -8,6 +8,9 @@
 
 
 // Write your code here
+function getSum(total, num) {
+  return total + num;
+}
 function calculateResult() {
   let e2 = document.getElementsByClassName('studentCard');
   let count = 0;
@@ -37,7 +40,4 @@ function calculateResult() {
     studentEle.querySelector('#total').innerHTML = total;
     studentEle.querySelector('#percentge').innerHTML = percentage;
   }
-}
-function getSum(total, num) {
-  return total + num;
 }
